@@ -8,12 +8,13 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
+    hot: true,
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
+        test: \.js$,
+        exclude: /node_modules/, 
         use: {
           loader: 'babel-loader',
           options: {
